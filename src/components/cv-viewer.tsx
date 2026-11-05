@@ -111,7 +111,7 @@ export function CvViewer({ cv }: CvViewerProps) {
               {/* Avatar Photo */}
               <div className="relative h-24 w-20 flex-shrink-0 overflow-hidden rounded border border-slate-300 shadow-2xs">
                 <Image
-                  src="/avatar.jpg"
+                  src={`${basePath}/avatar.jpg`}
                   alt="Niloy Pal"
                   fill
                   sizes="80px"

@@ -12,11 +12,15 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const basePath =
+  process.env.NEXT_PUBLIC_BASE_PATH ??
+  (process.env.NODE_ENV === "production" ? "/cv" : "");
+
 export const metadata: Metadata = {
   title: "Niloy Pal — Brand Designer & Creative AI Specialist",
   description: "Curriculum Vitae and Portfolio of Niloy Pal — Brand Designer & Creative AI Specialist.",
   icons: {
-    icon: "/avatar.jpg",
+    icon: `${basePath}/avatar.jpg`,
   },
 };
 
